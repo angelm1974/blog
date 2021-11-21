@@ -1,20 +1,31 @@
 <div class style="width:80%; display:flex">
-  <mat-card style="width: 80%">
+  <mat-card style="width: 80%; display: flex; flex-direction: column;">
     <mat-form-field appearance="fill">
-      <mat-label>Input</mat-label>
+      <mat-label>nazwisko:</mat-label>
       <input matInput>
     </mat-form-field>
     <mat-form-field appearance="fill">
-      <mat-label>Select</mat-label>
+      <mat-label>wiek:</mat-label>
       <mat-select>
-        <mat-option value="one">First option</mat-option>
-        <mat-option value="two">Second option</mat-option>
+        <mat-option value="o1">25</mat-option>
+        <mat-option value="o2">26</mat-option>
+        <mat-option value="o3">27</mat-option>
+        <mat-option value="o4">28</mat-option>
+        <mat-option value="o5">29</mat-option>
       </mat-select>
     </mat-form-field>
     <mat-form-field appearance="fill">
-      <mat-label>Textarea</mat-label>
+      <mat-label>napisz coś o sobie:</mat-label>
       <textarea matInput></textarea>
     </mat-form-field>
+    <mat-form-field appearance="fill">
+      <mat-label>scieżka do zdjęcia:</mat-label>
+      <input matInput>
+    </mat-form-field>
+    <div style="display:flex; justify-content:center;">
+      <button mat-raised-button color="accent">Anuluj</button>
+      <button mat-raised-button color="primary">Zapisz</button></div>
+
 
   </mat-card>
 </div>
